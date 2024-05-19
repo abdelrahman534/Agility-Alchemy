@@ -4,13 +4,14 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\AuthController;
 
 // Registration routes
-Route::get('/register', [RegisterController::class, 'register'])->name('register');
+Route::post('/register', [RegisterController::class, 'store'])->name('user-store');
+Route::get('/register', [RegisterController::class, 'create'])->name('user-create');
 
-// Authentication routes
+//Login routes
+Route::get('/login', [AuthController::class, 'signIn'])->name('signIn');
 Route::post('/login', [AuthController::class, 'login'])->name('login');
+
 Route::get('/home', [AuthController::class, 'home'])->name('home');
 
 // Additional routes
 Route::get('/index', [RegisterController::class, 'index'])->name('index');
-Route::get('/sign-in', [AuthController::class, 'signIn'])->name('signIn');
-?>

@@ -6,7 +6,7 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Welcome, {{ Auth::user()->name }}</h1>
+    <h1>Welcome, {{ Auth::user()->username }}</h1>
     <p>You are logged in!</p>
 </body>
 </html>

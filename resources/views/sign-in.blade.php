@@ -42,14 +42,14 @@
 
     <main>
         <div class="container">
-            <form action="{{route('home')}}" method="POST">
+            <form action="{{route('login')}}" method="POST">
                 @csrf
                 <h2>Sign In </h2>
                 <h3>to Agility Alchemist</h3>
                 <div class="input-group">
                     <input type=email id="input" name=email required minlength="4" multiple />
                     <label for=email class="label">Email</label>
-                   
+
                 </div>
                 <div class="input-group">
                     <input type=password id="input" name=password required minlength="4" multiple />
@@ -57,7 +57,7 @@
                 </div>
                 <button type="submit">Submit</button>
                 <div class="sign-up">
-                    <p>Don't have an account <a href="{{route('register')}}">Sign Up</a></p>
+                    <p>Don't have an account <a href="{{route('user-create')}}">Sign Up</a></p>
                 </div>
             </form>
         </div>

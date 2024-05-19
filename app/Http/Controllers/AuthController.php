@@ -20,12 +20,12 @@ class AuthController extends Controller
             ]);
 
             $user = User::where('email',$request->email)->first();
-            
+
             if($user && Hash::check($request->password,$user->password)){
                 Auth::login($user);
 
-                return redirect()->route('index');
-                    
+                return redirect()->route('home');
+
         }
         // If login fails, redirect back with error message
         return back()->withErrors([
