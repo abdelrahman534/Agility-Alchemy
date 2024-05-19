@@ -1,0 +1,357 @@
+@font-face {
+    font-family: 'poppins';
+    src: url(../Fonts/Poppins/Poppins-Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    background-color: #09051b;
+}
+
+body::-webkit-scrollbar {
+    width: 0.3rem;
+    height: 0rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(80, 93, 105);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #e7eaef;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+/* ---------------------------------------------------NAV BAR STYLING--------------------------------------------------- */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    width: 100vw;
+    height: fit-content;
+    min-height: 3em;
+
+}
+.nav--menu{
+    display: flex;
+    align-items: center;
+}
+.nav--main{
+    display: flex;
+    align-items: center;
+}
+
+.nav--menu {
+
+    margin-top: 25px;
+}
+
+.nav--main {
+    margin-top: 25px;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0 30px;
+    flex-wrap: wrap;
+    
+}
+
+nav img {
+    width: 35px;
+    padding: 0;
+}
+
+nav h3 {
+    padding: 0 8px;
+    font-size: 25px;
+    color: white;
+    margin:0;
+}
+
+.nav--main a {
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+    color: white;
+    
+}
+
+nav a:nth-child(-n+4):hover {
+    text-shadow: -3px -3px 15px #26f7fdf7,
+        4px 1px 2px rgba(38, 247, 253, 1),
+        0px 0px 25px rgba(38, 247, 253, 1),
+        0px 0px 12px rgba(38, 247, 253, 1),
+        0px 0px 18px rgba(38, 247, 253, 1),
+        0px 0px 7px rgba(38, 247, 253, 1);
+    font-size: 23px;
+    transition: all ease 0.5s;
+}
+
+.sign-container {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.nav--sign {
+    display: flex;
+align-items: center;  
+}
+
+.nav--sign:hover {
+    filter: drop-shadow(5px 1px 5px rgba(38, 247, 253, 0.97)) drop-shadow(5px 1px 2px rgba(38, 247, 253, 1)) drop-shadow(1px 1px 15px rgba(38, 247, 253, 1));
+    scale: 1.1;
+    transition: all ease 0.5s;
+}
+
+/* ---------------------------------------------------MAIN CONTENT STYLING --------------------------------------------------- */
+article {
+    margin-bottom: 150px;
+}
+
+.mainSection--hero img {
+    width: 100%;
+    height: 55em;
+    object-fit: cover;
+    opacity: 0.8;
+    position: relative;
+}
+
+.mainSection {
+    color: aliceblue;
+}
+
+.mainSection h1 {
+    color: rgba(240, 248, 255, 0.568);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.432);
+    font-size: 60px;
+    position: absolute;
+    top: 60%;
+    left: 49%;
+    transform: translate(-50%, -60%);
+    text-wrap: nowrap;
+}
+
+.mainSection h2 {
+    color: whitesmoke;
+    font-size: 45px;
+    margin: 0.9em 0;
+}
+
+.mainSection h4 {
+    color: rgba(255, 255, 255, 0.219);
+    font-size: 30px;
+    position: absolute;
+    top: 67%;
+    left: 49%;
+    transform: translate(-50%, -60%);
+    text-wrap: nowrap;
+   
+}
+.mainSection h4:hover{
+    font-size: 32px;
+    transform: translate(-50%, -60%);
+    transition: all  0.5s;
+}
+
+.signUp-btn {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.signUp-btn button:hover {
+    box-shadow: -3px -3px 15px #26f7fdf7;
+    width: 250px;
+    height: 90px;
+    font-size: 30px;
+    transition: all 0.5s;
+}
+
+.signUp-btn button:active {
+    box-shadow: -3px -3px 15px #26f7fdf7;
+    width: 190px;
+    height: 50px;
+    font-size: 23px;
+    transition: all 0.5s;
+}
+
+.signUp-btn button {
+    width: 200px;
+    height: 60px;
+    font-size: 26px;
+    color: white;
+    background-color: #425b6b;
+    border: 1px solid #384147;
+}
+
+.mainSection--aboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    border: 2px solid #c2cdd683;
+}
+
+.mainSection--aboutUs img {
+    width: 350px;
+    height: 450px;
+    display: inline;
+    object-fit: contain;
+}
+
+.aboutUs--desc {
+    margin: 0 3em;
+
+}
+
+.aboutUs--desc p {
+    margin: 50px 0;
+}
+
+.mainSection--services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    border: 2px solid #c2cdd683;
+    margin: 150px auto;
+}
+
+.service {
+    display: flex;
+    border: 0.5px solid #ff5f2048;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    margin: 2em 0;
+    width: 80%;
+}
+
+.service--desc {
+    width: 40%;
+}
+
+.service--desc p {
+    margin: 25px 0;
+    width: 100%;
+}
+
+.service--desc h3 {
+
+    font-size: 25px;
+}
+
+.mainSection--services h2 {
+    font-size: 45px;
+    margin: 2em 0;
+}
+
+.mainSection--services img {
+    height: 350px;
+    width: 350px;
+    margin: 0em 3em;
+    object-fit: cover;
+
+}
+
+.mainSection--whyUs {
+    margin: auto;
+    width: 80%;
+
+    border: 2px solid #c2cdd683;
+}
+
+.container-slider {
+    width: 50%;
+    flex-shrink: 2;
+    margin: auto;
+}
+
+.mainSection--whyUs h2 {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.mainSection--whyUs p {
+    text-align: center;
+    margin: 1em 0;
+    font-size: 20px;
+}
+
+.mainSection--whyUs bold {
+    color: #fdff6f;
+    text-shadow: 0px 0px 10px rgba(243, 255, 68, 1),
+        0px 0px 12px rgba(238, 255, 0, 1),
+        -2px -1px 3px rgba(229, 255, 0, 0.836),
+        4px 0px 12px rgba(255, 238, 0, 1),
+        -5px 0px 15px rgb(255, 255, 218);
+}
+
+/* --------------------------------------------------------------------FOOTER STYLES-------------------------------------------------------------------- */
+.footer--container {
+
+    display: flex;
+    background-color: #cbcbcc;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    margin: 150px auto 0 auto;
+}
+
+.footer--links ul {
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+}
+
+.footer--links li {
+    margin: 5em 3em;
+}
+
+.footer--links a {
+    text-decoration: none;
+    color: #526f81;
+}
+
+.footer--links a:hover {
+    font-size: 20px;
+    transition: all ease 0.5s;
+}
+
+.footer--socialMedia img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    margin: 3em 5em;
+    filter: grayscale(100);
+}
+
+.footer--socialMedia img:hover {
+    filter: grayscale(0);
+    transform: scale(1.2);
+    transition: all ease 0.5s;
+}
+
+.footer--copyRight {
+    color: #3c4347;
+    width: 70%;
+    margin: auto
+}
+

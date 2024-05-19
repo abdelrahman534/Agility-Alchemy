@@ -1,0 +1,188 @@
+
+ /* ---------------------------------------------------- SIGN UP PAGE Styles ----------------------------------------------------  */
+ @font-face {
+    font-family: 'PostenOne';
+    src: url(../Fonts/PoetsenOne.ttf);
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: url(../Fonts/Poppins/Poppins-Regular.ttf);
+  }
+  *{
+    font-family: "Poppins";
+  }
+   /* Applies to the all body  */
+  body {
+  
+    background: url(/images/scott-webb-xwMlVSqP20U-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    
+  }
+  main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+  
+   /* Applies to the all the form  */
+  .container {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.090);
+    -webkit-backdrop-filter: blur(30px); /* Safari */
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+  }
+
+  /* Fallback for browsers that do not support backdrop-filter */
+@supports not ((-webkit-backdrop-filter: blur(30px)) or (backdrop-filter: blur(30px))) {
+  .container {
+      background: rgba(255, 255, 255, 0.5); /* Fallback background */
+  }
+}
+
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   /* applies to any H2 tag in any form */
+  form h2,
+  h3 {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.8px;
+    margin: 1px;
+  }
+  
+  
+   /* applies to the input group className  */
+  .input-group {
+    position: relative;
+    margin: 35px auto 0;
+    width: 320px;
+  }
+  
+   /* applies to any input tag in the input-group */
+  .input-group input {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 0px;
+    background: transparent;
+    border-bottom: 2px solid white;
+  
+  }
+  
+   /* applies to any label className in the input group  */
+  .input-group .label {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: aliceblue;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+   /* applies to the input tags in the input group while typing and while inputs are valid
+   */
+  .input-group input:focus~.label,
+  .input-group input:valid~.label,
+  .input-group input:invalid~.label
+  .input-group {
+    top: -20px;
+    font-size: 13px;
+    color: antiquewhite;
+  }
+  
+  
+  /*  Applies to the checkbox itself */
+  
+  
+  form button {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    background: rgba(0, 0, 0, 0.20);
+    border-radius: 5px;
+    padding: 13px;
+    margin-top: 3em ;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+   /* applies when any button in form is hovered */
+  
+  form button:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+  
+  /*  applies to the .sign-up  */
+  .sign-up {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+   /* applies to the P element in the sign in className */
+  
+  .sign-up p {
+    color: aliceblue;
+    font-size: 14px;
+  }
+  
+  .sign-up p a {
+    color: antiquewhite;
+    text-decoration: none;
+  }
+  
+  .sign-up p a:hover {
+    color: rgb(243, 69, 170);
+    transition: 0.3s;
+  }
+ /*  ---------------------------------------------------- Footer Styles ----------------------------------------------------   */
+  footer p {
+    text-align: center;
+    color: rgb(173, 173, 173);
+    padding: 12px;
+    font-size: 15px;
+    text-shadow: 2px 5px 5px black;
+  }
+  
+  footer a {
+    color: rgb(156, 156, 156);
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: rgb(243, 69, 170);
+    transition: 0.6s;
+  }
+  
+  .alert-danger{
+    font-size: 19px;
+    color: rgb(198, 45, 45);
+    text-align: center;
+    font-weight: bold;
+  }
+
+.alert-danger ul {
+  list-style : none;
+}
+    
+  
+  
+  
