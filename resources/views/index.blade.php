@@ -51,7 +51,7 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact Us</a></li>
                 <div class="sign-container">
-                    <a href="{{route('create')}}">
+                    <a href="{{route('user-create')}}">
                         <div class="nav--sign">
                             <img src="{{asset('images/SignUpIcon.png')}}" alt="Sign up Icon"/>
                             <li>Sign Up</li>
@@ -79,7 +79,7 @@
             <h1>AGILITY ALCHEMIST</h1>
             <h4>Invest in Yourself Today</h4>
             <div class="signUp-btn">
-                <a href="{{route('create')}}">
+                <a href="{{route('user-create')}}">
                     <button>SIGN UP NOW</button>
                 </a>
             </div>
@@ -170,7 +170,7 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Our Services</a></li>
-                    <li><a href="{{route('create')}}">SignUp</a></li>
+                    <li><a href="{{route('user-create')}}">SignUp</a></li>
                 </ul>
             </div>
             <div class="footer--socialMedia">
