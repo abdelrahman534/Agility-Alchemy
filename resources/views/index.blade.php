@@ -75,7 +75,7 @@
     <!-- Add your main content here -->
     <section class="mainSection">
         <article class="mainSection--hero">
-            <img src="images/Man-Training.jpg" alt="Agility Alchemist"/>
+            <img src="{{asset('images/manTraining.jpg')}}" alt="Agility Alchemist"/>
             <h1>AGILITY ALCHEMIST</h1>
             <h4>Invest in Yourself Today</h4>
             <div class="signUp-btn">

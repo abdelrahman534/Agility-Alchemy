@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-color: #09051b;
+    background-color: #05141B;
 }
 
 body::-webkit-scrollbar {
@@ -35,30 +35,18 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     background-color: #000000;
     width: 100vw;
-    height: fit-content;
-    min-height: 3em;
-
-}
-.nav--menu{
-    display: flex;
-    align-items: center;
-}
-.nav--main{
-    display: flex;
+    min-height: 40px;
     align-items: center;
 }
 
 .nav--menu {
-
     margin-top: 25px;
 }
 
 .nav--main {
     margin-top: 25px;
-
 }
 
 nav ul {
@@ -66,8 +54,7 @@ nav ul {
     align-items: center;
     list-style: none;
     margin: 0 30px;
-    flex-wrap: wrap;
-    
+
 }
 
 nav img {
@@ -79,7 +66,7 @@ nav h3 {
     padding: 0 8px;
     font-size: 25px;
     color: white;
-    margin:0;
+    margin: 0;
 }
 
 .nav--main a {
@@ -87,7 +74,6 @@ nav h3 {
     margin: 0 20px;
     font-size: 20px;
     color: white;
-    
 }
 
 nav a:nth-child(-n+4):hover {
@@ -102,14 +88,14 @@ nav a:nth-child(-n+4):hover {
 }
 
 .sign-container {
-display: flex;
-align-items: center;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav--sign {
     display: flex;
-align-items: center;  
+    align-items: center;
 }
 
 .nav--sign:hover {
@@ -156,16 +142,10 @@ article {
     color: rgba(255, 255, 255, 0.219);
     font-size: 30px;
     position: absolute;
-    top: 67%;
+    top: 65%;
     left: 49%;
     transform: translate(-50%, -60%);
     text-wrap: nowrap;
-   
-}
-.mainSection h4:hover{
-    font-size: 32px;
-    transform: translate(-50%, -60%);
-    transition: all  0.5s;
 }
 
 .signUp-btn {
@@ -237,8 +217,6 @@ article {
     display: flex;
     border: 0.5px solid #ff5f2048;
     align-items: center;
-    justify-content: center;
-    justify-self: center;
     margin: 2em 0;
     width: 80%;
 }
@@ -253,7 +231,6 @@ article {
 }
 
 .service--desc h3 {
-
     font-size: 25px;
 }
 
@@ -265,15 +242,13 @@ article {
 .mainSection--services img {
     height: 350px;
     width: 350px;
-    margin: 0em 3em;
+    margin-right: 3em;
     object-fit: cover;
-
 }
 
 .mainSection--whyUs {
     margin: auto;
     width: 80%;
-
     border: 2px solid #c2cdd683;
 }
 
@@ -305,20 +280,19 @@ article {
 
 /* --------------------------------------------------------------------FOOTER STYLES-------------------------------------------------------------------- */
 .footer--container {
-
     display: flex;
     background-color: #cbcbcc;
     align-items: center;
     flex-direction: column;
     width: 100%;
-
     margin: 150px auto 0 auto;
 }
 
 .footer--links ul {
     list-style: none;
     display: flex;
-    flex-grow: 1;
+    width: fit-content;
+    width: -moz-fit-content;
 }
 
 .footer--links li {
@@ -355,3 +329,312 @@ article {
     margin: auto
 }
 
+
+@media only screen and (max-width: 1100px) {
+    .mainSection--hero img {
+        width: 100%;
+        height: 44em;
+        margin: 0 auto;
+    }
+    
+
+    nav h3 {
+        font-size: 20px;
+    }
+
+    .nav--main a {
+        font-size: 16px;
+    }
+    .nav--main li{
+        margin: 1em 0;
+    }
+
+    nav img {
+        width: 28px;
+
+    }
+
+    nav a:nth-child(-n+4):hover {
+        font-size: 18.4px;
+    }
+
+    .mainSection h1 {
+        font-size: 36px;
+    }
+
+
+    .mainSection h2 {
+        font-size: 30px;
+       
+    }
+
+    .mainSection h3 {
+        font-size: 25px;
+
+    }
+
+    .mainSection h4 {
+        font-size: 24px;
+    }
+
+    .mainSection p {
+        font-size: 15px;
+    }
+
+    .mainSection--aboutUs img {
+        width: 280px;
+        height: 370px;
+    }
+
+    .service--desc {
+        width: 30%;
+    }
+
+    .service--desc h3 {
+
+        font-size: 20px;
+    }
+
+    .service--desc p {
+        font-size: 15px;
+
+    }
+
+    .mainSection--services img {
+        height: 300px;
+        width: 300px;
+
+    }
+
+}
+
+@media only screen and (max-width: 939px) {
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+ 
+}
+
+@media only screen and (max-width: 768px) {
+    .mainSection--hero img {
+        height: 39.6em;
+        /* 44em - 10% */
+    }
+
+    nav h3 {
+        font-size: 18px;
+        /* 20px - 10% */
+    }
+
+    .nav--main a {
+        font-size: 14.4px;
+        /* 16px - 10% */
+    }
+
+    nav img {
+        width: 25.2px;
+    }
+
+    nav a:nth-child(-n+4):hover {
+        font-size: 16.56px;
+    }
+
+    .mainSection h1 {
+        font-size: 32.4px;
+    }
+
+    .mainSection h2 {
+        font-size: 25px;
+       
+    }
+
+    .mainSection h3 {
+        font-size: 22.5px;
+    }
+
+    .mainSection h4 {
+        font-size: 21.6px;
+    }
+
+    .mainSection p {
+        font-size: 13.5px;
+    }
+
+    .mainSection--aboutUs img {
+        width: 240px;
+        height: 320px;
+    }
+
+    .service--desc {
+        width: 50%;
+    }
+
+    .service--desc h3 {
+        font-size: 13px;
+    }
+
+    .service--desc p {
+        font-size: 10px;
+    }
+
+    .mainSection--services img {
+        height: 230px;
+        width: 220px;
+    }
+}
+@media screen and (max-width:580px) {
+
+    .mainSection--hero img {
+        height: 40em; /* 44em - 35% */
+     width: 100%;
+    }
+    
+    nav h3 {
+        font-size: 15px; /* 20px - 35% */
+    }
+    
+    .nav--main a {
+        font-size: 13px; /* 16px - 35% */
+    }
+    nav a:nth-child(-n+4):hover {
+        font-size: 11.96px; /* 18.4px - 35% */
+    }
+    
+    .mainSection h1 {
+        font-size: 23.4px; /* 36px - 35% */
+    }
+    
+    .mainSection h2 {
+        font-size: 17px; /* 30px - 35% */
+     
+    }
+    
+    .mainSection h3 {
+        font-size: 17px; /* 25px - 35% */
+    }
+    
+    .mainSection h4 {
+        font-size: 5px; /* 24px - 35% */
+    }
+    
+    .mainSection p {
+        font-size: 9.75px; /* 15px - 35% */
+    }
+    
+    .mainSection--aboutUs img {
+        width: 182px; /* 280px - 35% */
+        height: 240.5px; /* 370px - 35% */
+    }
+    .service--desc {
+        width: 50%;
+    }  
+    .service--desc h3 {
+        font-size: 12px; /* 20px - 35% */
+    }
+    
+    .service--desc p {
+        font-size: 8px; /* 15px - 35% */
+    }
+    
+    .mainSection--services img {
+        height: 150px; /* 300px - 35% */
+        width: 150px; /* 300px - 35% */
+    }
+    .footer--links li {
+        margin: 5em 20px;
+    }
+    .footer--socialMedia img {
+        height: 30px;
+        width: 30px;
+        margin: 3em 3em;
+    }
+    .footer--copyRight{
+        text-align: center;
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width:530px) {
+   nav{
+    flex-direction: column;
+   }
+}
+@media screen and (max-width:425px) {
+    
+    .mainSection--hero img {
+        height: 35em; /* 44em - 60% */
+    }
+    
+    nav h3 {
+        font-size: 15px; /* 20px - 60% */
+    }
+    
+    .nav--main a {
+        font-size: 13px; /* 16px - 60% */
+    }
+    
+    nav img {
+        width: 20px; /* 28px - 60% */
+    }
+    
+    nav a:nth-child(-n+4):hover {
+        font-size: 15px; /* 18.4px - 60% */
+    }
+    
+    .mainSection h1 {
+        font-size: 25px; /* 36px - 60% */
+    }
+    
+    .mainSection h2 {
+        font-size: 17px; /* 30px - 60% */
+       
+    }
+    
+
+    
+    .mainSection h4 {
+        font-size: 13px; /* 24px - 60% */
+    }
+    
+    .mainSection p {
+        font-size: 8px; /* 15px - 60% */
+    }
+    
+    .mainSection--aboutUs img {
+        width: 180px; /* 280px - 60% */
+        height: 150px; /* 370px - 60% */
+    }
+    
+    .service--desc{
+        margin: auto;
+        width: 50%;
+        height: 50%;
+    }
+    
+    .service--desc h3 {
+        font-size: 10px; /* 20px - 60% */
+    }
+    
+    .service--desc p {
+        font-size: 7.5px; /* 15px - 60% */
+    }
+    
+    .mainSection--services img {
+        height: 110px; /* 300px - 60% */
+        width: 110px; /* 300px - 60% */
+        margin: auto 1em;
+    }
+    .footer--links li {
+        margin: 5em 15px;
+    }
+    .footer--socialMedia img {
+        height: 30px;
+        width: 30px;
+        margin: 3em 2.5em;
+    }
+    .footer--copyRight{
+        text-align: center;
+        font-size: 15px;
+    }
+}

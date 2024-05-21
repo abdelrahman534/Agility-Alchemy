@@ -23,6 +23,7 @@ class RegisterController extends Controller
             'email' => 'required|string|email|max:255|unique:users,email',
             'gender' => 'required|string|in:Male,Female',
             'terms' => 'accepted',
+            
         ]);
         $user = User::create([
             'username' => $request->username,
@@ -31,8 +32,8 @@ class RegisterController extends Controller
             'gender' => $request->gender,
         ]);
         Auth::login($user);
-
-        return redirect()->route('home');
+        
+        return redirect()->route('signIn');
         // remove index and add the homepage link
     }
 

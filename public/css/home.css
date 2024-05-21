@@ -1,0 +1,624 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 0.3rem;
+    height: 0rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(80, 93, 105);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: white;
+    color: white;
+}
+
+.article-line {
+    border-top: 0.5px solid rgb(54, 54, 54);
+    width: 100%;
+    margin: 50px 0;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: #030c25;
+    margin-left: 70px;
+    /* Reserve space for the collapsed sidebar */
+}
+
+#sidebar {
+    width: 70px;
+    min-width: 70px;
+    transition: all 0.25s ease-in-out;
+    background-color: #0e2238;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    /* Make the sidebar fixed */
+    height: 100%;
+    /* Full height */
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    /* Enable vertical scrolling if needed */
+}
+
+#sidebar.expand {
+    width: 280px;
+    min-width: 280px;
+}
+
+.toggle-btn {
+    margin: auto 0 auto 1em;
+    cursor: pointer;
+    padding: 1rem 0.1rem;
+    width: 50px;
+
+
+}
+
+.sidebar-logo {
+
+    margin: auto 0.2em;
+}
+
+.sidebar-logo h2 {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none;
+}
+
+#sidebar:not(.expand) .toggle-btn {
+    margin: auto;
+}
+
+.sidebar-nav {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+a.sidebar-link {
+    padding: 2rem 1.625rem;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+    margin-top: 50px;
+}
+
+.sidebar-link i {
+    font-size: 1.1rem;
+    margin-right: 0.75rem;
+}
+
+a.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-left: 3px solid #3b7ddd;
+}
+
+.sidebar-item {
+    position: relative;
+}
+
+#sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    background-color: #0e2238;
+    padding: 0;
+    min-width: 15rem;
+    display: none;
+}
+
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
+    display: block;
+    max-height: 15em;
+    width: 100%;
+    opacity: 1;
+}
+
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
+    border: solid;
+    border-width: 0 0.075rem 0.075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition: all 0.2s ease-out;
+}
+
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+    transform: rotate(45deg);
+    transition: all 0.2s ease-out;
+}
+
+#sidebar.expand::-webkit-scrollbar {
+    width: 0.3rem;
+    height: 0rem;
+}
+
+#sidebar.expand::-webkit-scrollbar-track {
+    background-color: rgb(80, 93, 105);
+}
+
+#sidebar.expand::-webkit-scrollbar-thumb {
+    background: white;
+    color: white;
+}
+
+main h1 {
+    color: rgb(230, 229, 229);
+}
+
+article {
+    margin-bottom: 150px;
+}
+
+.mainSection--hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 55em;
+}
+
+.mainSection--hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+
+}
+
+.mainSection {
+    color: aliceblue;
+}
+
+.mainSection h1 {
+    color: rgba(240, 248, 255, 0.568);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.432);
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-wrap: nowrap;
+}
+
+.mainSection h2 {
+    color: whitesmoke;
+    font-size: 45px;
+    margin: 0.9em 0;
+}
+
+.mainSection h4 {
+    color: rgba(255, 255, 255, 0.219);
+    font-size: 30px;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-wrap: nowrap;
+}
+
+
+#sidebar.expand+.main {
+    margin-left: 280px;
+
+}
+
+.mainSection--howto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    border: 2px solid #c2cdd683;
+}
+
+.mainSection--howto img {
+    width: 350px;
+    height: 450px;
+    display: inline;
+    object-fit: contain;
+}
+
+.howto--desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3em;
+
+}
+
+.howto--desc p {
+    margin: 50px 0;
+}
+
+.howto--desc ol {
+    list-style: decimal;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin: 2em auto;
+    width: 90%;
+}
+
+.card-body {
+    background-color: #030b22;
+}
+
+.card {
+    border: 1px solid saddlebrown;
+    flex-shrink: 2;
+}
+
+.card-container button {
+    border: none;
+    border-radius: none;
+    background-color: transparent;
+}
+
+.modal-body {
+    background-color: black;
+    color: #030b22;
+}
+
+.card-title {
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.card-text {
+    color: #d4d5fc;
+    font-size: .8em;
+}
+
+
+.footer--container {
+
+    display: flex;
+    background-color: #cbcbcc;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 0 1em;
+    
+}
+
+.footer--links ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+.footer--links li {
+    margin: 5em 2em;
+}
+
+.footer--links a {
+    text-decoration: none;
+    color: #526f81;
+}
+
+.footer--links a:hover {
+    font-size: 20px;
+    transition: all ease 0.5s;
+}
+
+.footer--socialMedia img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    margin: 3em 5em;
+    filter: grayscale(100);
+}
+
+.footer--socialMedia img:hover {
+    filter: grayscale(0);
+    transform: scale(1.2);
+    transition: all ease 0.5s;
+}
+
+.footer--copyRight {
+    color: #3c4347;
+    width: 70%;
+    margin: auto
+}
+
+
+/* Media Queries */
+
+/* For screens less than 1100px */
+@media (max-width: 1024px) {
+    .mainSection--hero {
+        height: 50em;
+    }
+
+    .mainSection h2 {
+        font-size: 37px;
+    }
+
+    .mainSection h4 {
+        font-size: 22px;
+    }
+
+    .mainSection--howto img {
+        width: 320px;
+        height: 450px;
+
+    }
+
+    .how--desc {
+        margin: auto 2em;
+    }
+
+    .howto--desc h2 {
+        font-size: 32px;
+    }
+
+    .howto--desc p {
+        font-size: 15px;
+        margin: 20px 0 20px 0px;
+    }
+
+    .mainSection--howto {
+        width: 90%;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    .card-title {}
+
+    .card-text {}
+}
+
+/* For screens less than 768px */
+@media (max-width: 768px) {
+    .mainSection--hero {
+        height: 45em;
+    }
+
+    .mainSection h2 {
+        font-size: 32px;
+    }
+
+    .mainSection h4 {
+        font-size: 17px;
+    }
+
+    #sidebar.expand {
+        width: 90%;
+    }
+    
+
+}
+
+/* For screens less than 580px */
+@media (max-width: 675px) {
+    .mainSection--howto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mainSection--hero {
+        height: 40em;
+    }
+
+    .mainSection h2 {
+        font-size: 30px;
+    }
+
+    .mainSection h4 {
+        font-size: 15px;
+    }
+
+    .mainSection--howto img {
+        width: 280px;
+        height: 400px;
+
+    }
+
+    .how--desc {
+        margin: auto 1em;
+    }
+
+    .howto--desc h2 {
+        font-size: 30px;
+    }
+
+    .howto--desc p {
+        font-size: 16px;
+        margin: 20px 0 20px 0px;
+    }
+
+    .mainSection--howto {
+        width: 100%;
+    }
+
+    li {
+        font-size: 15px;
+    }
+
+    #sidebar.expand {
+        width: 100%;
+    }
+
+    .card-title {}
+
+    .card-text {}
+}
+
+
+/* For screens less than 425px */
+@media (max-width: 625px) {
+    .mainSection--hero {
+        height: 35em;
+    }
+
+    .mainSection--hero h1 {
+        font-size: 40px;
+    }
+
+    .mainSection--hero h4 {
+        font-size: 22px;
+    }
+    .footer--links li {
+        margin: 5em 20px;
+    }
+    .footer--socialMedia img {
+        height: 30px;
+        width: 30px;
+        margin: 3em 3em;
+    }
+    .footer--copyRight{
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 535px) {
+
+
+    .mainSection--howto img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .how--desc {
+        margin: auto 0em;
+    }
+
+    .howto--desc h2 {
+        font-size: 17px;
+    }
+
+    .howto--desc p {
+        font-size: 12px;
+        margin: 20px 0 20px 0px;
+    }
+
+    .mainSection--howto {
+        width: 90%;
+    }
+
+    li {
+        font-size: 11px;
+    }
+
+.main{
+    margin-left: 50px;
+}
+#sidebar{
+    width: 50px;
+    min-width: 50px;
+}
+}
+@media (max-width: 435px){
+    .mainSection--hero {
+        height: 30em;
+    }
+
+    .mainSection--hero h1 {
+        font-size:30px;
+    }
+
+    .mainSection--hero h4 {
+        font-size: 15px;
+    }
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-size: 13px;
+    }
+}
+@media (max-width: 435px){
+    .mainSection--hero {
+        height: 25em;
+    }
+
+    .mainSection--hero h1 {
+        font-size:25px;
+    }
+
+    .mainSection--hero h4 {
+        font-size: 20px;
+    }
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-size: 13px;
+    }
+    .footer--links li {
+        font-size: 15px;
+        margin: 5em 1.5em 2em 1.5em;
+    }
+    
+    .footer--socialMedia img {
+        height: 30px;
+        width: 30px;
+        margin: 1em 1em;
+    }
+    .footer--copyRight{
+        text-align: center;
+        font-size: 10px;
+    }
+}
