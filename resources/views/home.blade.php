@@ -67,7 +67,7 @@
                                 Gym Classes </a>
                             <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
                                 <li class="sidebar-item">
-                                    <a href="#aquatics" class="sidebar-link">Aquatics</a>
+                                    <a href="#Calisthenics" class="sidebar-link">calisthenics</a>
                                 </li>
                                 <li class="sidebar-item">
                                     <a href="#cardio" class="sidebar-link">Cardio</a>
@@ -88,7 +88,7 @@
 
             </ul>
             <div class="sidebar-footer">
-                <a href="index.html" class="sidebar-link">
+                <a href="{{route('index')}}" class="sidebar-link">
                     <i class="lni lni-exit"></i>
                     <span>Logout</span>
                 </a>
@@ -99,13 +99,13 @@
                 <section class="mainSection">
                     <article>
                         <div class="mainSection--hero">
-                            <img src="{{asset('images/manTraining.jpg')}}" alt="Agility Alchemist" />
+                            <img src="{{asset('images/AI.jpg')}}" alt="Agility Alchemist" />
                             <h1>AGILITY ALCHEMIST</h1>
                             <h4>Invest in Yourself Today</h4>
                         </div>
                     </article>
                     <article class="mainSection--howto" id='howto'>
-                        <img src="images/howToUse.png" alt="How to use Our website" />
+                        <img src="{{asset('images/section.jpg')}}" alt="How to use Our website" />
                         <div class="howto--desc">
                             <h2>How to use our website</h2>
                             <p>You can use our side navigation bar in order to move to any desired section by following
@@ -126,61 +126,59 @@
                         <h2 class="text-center">Gym Classes</h2>
 
 
-                        {{-- <!--  AQUATICS PART -->
+                        <!--  Calisthenics PART -->
 
-                        <h3 class="text-center mt-5">Aquatics</h3>
-                        <div class="card-container" id="aquatics">
+                        <h3 class="text-center mt-5">Calisthenics</h3>
+                        <div class="card-container" id="Calisthenics">
                             <button>
-                                <div class="card" data-video-id="lWpqLKdSso0" style=" width: 20rem; max-height: 350px; min-height: 25rem; border: 2px solid
+                                <div class="card" data-video-id="CqqWGmJkSYc" style=" width: 20rem; max-height: 350px; min-height: 25rem; border: 2px solid
                                     rgb(0, 79, 99)">
-                                    <img src="./images/aquatics1.jpg" class="card-img-top" alt="...">
+                                    <img src="{{asset('images/1.jpg')}}" class="card-img-top" alt="...">
                                     <div class="card-body ">
-                                        <p class="card-title text-white">10 Pool Exercises to Burn More Calories and
-                                            Lose Weight</p>
-                                        <p class="card-text ">A follow-along water routine or just watch to
-                                            get inspired with what you can do in the water, no equipment needed. just
-                                            using our own body weight</p>
-                                    </div>
-                                </div>
-                            </button>
-                            <button>
-                                <div class="card" data-video-id="KMqr1z4MF3c"
-                                    style="width: 20rem; max-height: 350px; min-height: 25rem;  border: 2px solid rgb(0, 79, 99)">
-                                    <img src="./images/aquatics2.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body ">
-                                        <p class="card-title text-white">Pool Exercises with Noodle - Legs and Glutes
+                                        <p class="card-title text-white">The Best Workout Routine to Start Calisthenics for Beginners </p>
+                                        <p class="card-text ">This video shares the best Workout Routine to start Calisthenics for Beginners.
+                                             It includes 3 full body calisthenics workouts that target every muscle group like;
+                                              the chest, back, legs, core, and arms. 
                                         </p>
-                                        <p class="card-text">Aquatic exercise that utilize the noodle to increase the
-                                            effectiveness of the workout</p>
                                     </div>
                                 </div>
                             </button>
                             <button>
-                                <div class="card" data-video-id="bAaREL8vC4I"
-                                    style="width: 20rem; max-height: 350px; min-height: 25rem; border: 2px solid rgb(0, 79, 99)">
-                                    <img src="./images/aquatics3.jpg" class="card-img-top" alt="...">
+                                <div class="card" data-video-id="8gQbgyTlS-8"
+                                    style="width: 20rem; max-height: 350px; min-height: 25rem;  border: 2px solid rgb(0, 79, 99)">
+                                    <img src="{{asset('images/2.jpg')}}" class="card-img-top" alt="...">
                                     <div class="card-body ">
-                                        <p class="card-title text-white">Pool Workout for Weight Loss</p>
-                                        <p class="card-text">Join me for 30 min of fun and dynamic cardio pool workout,
-                                            Burn calories, strengthen your whole body and feel good</p>
+                                        <p class="card-title text-white">How to Start Calisthenics at Home For Beginners (No Equipment)</p>
+                                        <p class="card-text"> Provides a comprehensive view on how to start calisthenics for beginners</p>
                                     </div>
                                 </div>
                             </button>
                             <button>
-                                <div class="card" data-video-id="YLXt-TUKcqU"
+                                <div class="card" data-video-id="u0v8_1JdGRY"
                                     style="width: 20rem; max-height: 350px; min-height: 25rem; border: 2px solid rgb(0, 79, 99)">
-                                    <img src="./images/aquatics4.jpg" class="card-img-top" alt="...">
+                                    <img src="{{asset('images/3.jpg')}}" class="card-img-top" alt="...">
                                     <div class="card-body ">
-                                        <p class="card-title text-white">Water Aerobics Exercises with Hand Buoys</p>
-                                        <p class="card-text">30 minute pool workout - water aerobics exercises with with
-                                            hand buoys. Strength conditioning and cardio to burn calories and lose
-                                            weight</p>
+                                        <p class="card-title text-white">Do This to Build Muscle with Calisthenics + Beginner Workout Plan</p>
+                                        <p class="card-text">Do you think that you can’t build muscle with Calisthenics? Let me explain to you how you can! Unfortunately, 
+                                            many people in the fitness world say that calisthenics athletes are skinny,
+                                            don’t train legs, and can only be used to learn skills.</p>
+                                    </div>
+                                </div>
+                            </button>
+                            <button>
+                                <div class="card" data-video-id="vczr0WuYK9g"
+                                    style="width: 20rem; max-height: 350px; min-height: 25rem; border: 2px solid rgb(0, 79, 99)">
+                                    <img src="{{asset('images/4.jpg')}}" class="card-img-top" alt="...">
+                                    <div class="card-body ">
+                                        <p class="card-title text-white">Calisthenics for Beginners | In Depth Step-by-Step Guide to Building Strength and Muscle</p>
+                                        <p class="card-text"> Indepth and detailed view into calisthenics, which provides warmups,
+                                             pushing movements, pulling movements, core movements, leg movements.</p>
                                     </div>
                                 </div>
                             </button>
                             <div class="article-line"></div>
 
-                        </div> --}}
+                        </div>
 
                         <!--  CARDIO PART -->
                         <h3 class="text-center mt-5">Cardio</h3>
@@ -425,9 +423,7 @@
                         </div>
         </div>
         </article>
-        <article>
 
-        </article>
         </section>
         </main>
 
@@ -435,13 +431,13 @@
     </div>
     <footer id="contact">
         <div class="footer--container">
-            <div class="footer--links">
+            <!-- <div class="footer--links">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="./index.html#about">About Us</a></li>
                     <li><a href="./index.html#services">Our Services</a></li>
                 </ul>
-            </div>
+            </div> -->
             <div class="footer--socialMedia">
                 <a href="#"><img src="images/instagram.png" alt="Instagram Icon" /></a>
                 <a href="#"><img src="images/linkedin.png" alt="LinkedInIcon" /></a>
